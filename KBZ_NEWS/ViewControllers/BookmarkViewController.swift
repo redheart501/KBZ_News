@@ -79,9 +79,12 @@ extension BookmarkViewController : UITableViewDelegate,UITableViewDataSource{
         cell.lblAuthor.text = data.value(forKey: "author") as? String ?? ""
         cell.lblTitle.text = data.value(forKey: "title") as? String ?? ""
         cell.lblDate.text = Date.getFormattedDate(string: data.value(forKey: "publishedAt") as? String ?? "", formatter: "yyyy-MM-dd HH:mm:ss")
-        if let urlimage = URL(string: data.value(forKey: "image") as? String ?? "") {
-            cell.imgOfNews.af_setImage(withURL: urlimage)
+        DispatchQueue.main.async {
+            if let urlimage = URL(string: data.value(forKey: "image") as? String ?? "") {
+                cell.imgOfNews.af_setImage(withURL: urlimage)
+            }
         }
+       
         return cell
         
     }

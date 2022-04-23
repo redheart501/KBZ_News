@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         tableView.addSubview(refreshControl)
-        self.NewsListModel.getData(category: "technology")
+        self.NewsListModel.getData(category: "entertainment")
         initViewModel()
         loadingView = view.addCenterLoadingView()
         loadingView.startAnimating()
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     @objc func refresh(_ sender: AnyObject) {
-        self.NewsListModel.getData(category: "technology")
+        self.NewsListModel.getData(category: "entertainment")
         refreshControl.endRefreshing()
     }
 }
@@ -63,9 +63,12 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         cell.lblAuthor.text = cellVM.author
         cell.lblTitle.text = cellVM.title
         cell.lblDate.text = Date.getFormattedDate(string: cellVM.publishedAt, formatter: "yyyy-MM-dd HH:mm:ss")
-        if let urlimage = URL(string: cellVM.urlToImage) {
-            cell.imgOfNews.af_setImage(withURL: urlimage)
+        DispatchQueue.main.async {
+            if let urlimage = URL(string: cellVM.urlToImage) {
+                cell.imgOfNews.af_setImage(withURL: urlimage)
+            }
         }
+       
         return cell
         
     }
