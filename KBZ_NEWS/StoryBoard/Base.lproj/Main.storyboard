@@ -25,9 +25,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CKv-ln-ics">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="CKv-ln-ics">
                                 <rect key="frame" x="0.0" y="154" width="414" height="619"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                             </tableView>
@@ -35,9 +34,13 @@
                         <viewLayoutGuide key="safeArea" id="Jgy-6D-Xtu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="CKv-ln-ics" firstAttribute="leading" secondItem="Jgy-6D-Xtu" secondAttribute="leading" id="3kP-s4-lmy"/>
+                            <constraint firstItem="Jgy-6D-Xtu" firstAttribute="trailing" secondItem="CKv-ln-ics" secondAttribute="trailing" id="56C-B8-p8K"/>
                             <constraint firstItem="5dW-ZC-6JZ" firstAttribute="top" secondItem="Jgy-6D-Xtu" secondAttribute="top" id="AxK-Ta-Zlm"/>
+                            <constraint firstItem="CKv-ln-ics" firstAttribute="top" secondItem="5dW-ZC-6JZ" secondAttribute="bottom" constant="8" symbolic="YES" id="SKy-et-WN6"/>
                             <constraint firstItem="Jgy-6D-Xtu" firstAttribute="trailing" secondItem="5dW-ZC-6JZ" secondAttribute="trailing" constant="119" id="SP4-wA-LgQ"/>
                             <constraint firstItem="5dW-ZC-6JZ" firstAttribute="leading" secondItem="pYt-Co-yNz" secondAttribute="leadingMargin" id="eN4-Kc-gGr"/>
+                            <constraint firstItem="Jgy-6D-Xtu" firstAttribute="bottom" secondItem="CKv-ln-ics" secondAttribute="bottom" constant="40" id="p99-Zq-vAf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ci5-cR-3dM"/>
