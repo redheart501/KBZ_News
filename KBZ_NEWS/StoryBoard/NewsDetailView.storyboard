@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="NewsDetailViewController" id="Y6W-OH-hqX" customClass="NewsDetailViewController" customModule="KBZ_NEWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Iq-RJ-C4M">
+                                <rect key="frame" x="0.0" y="44" width="414" height="258"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="MqU-QF-JoV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" This is the end This is the end This is the end This is the end This is the end This is the end " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P15-on-i8y">
+                                <rect key="frame" x="20" y="317" width="374" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="XtL-UR-xQ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-Sy-TaZ">
+                                <rect key="frame" x="20" y="386" width="39.5" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="zOy-sp-2mv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxu-2a-vnL">
+                                <rect key="frame" x="67" y="392.5" width="25" height="16"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" This is the end This is the end This is the end This is the end This is the end This is the end " textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgO-7S-S16">
+                                <rect key="frame" x="17" y="451" width="374" height="41.5"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcD-W4-gmn">
+                                <rect key="frame" x="362" y="384.5" width="32" height="28.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="GVU-SK-ekP"/>
+                                    <constraint firstAttribute="height" constant="32" id="wuH-zi-p5G"/>
+                                </constraints>
+                                <color key="tintColor" red="0.3921568627" green="0.43921568630000002" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="backgroundImage" image="bookmark" catalog="system" symbolScale="small"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBookmark:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e8h-8a-gnx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kcD-W4-gmn" secondAttribute="trailing" constant="20" id="0mw-W1-sO8"/>
+                            <constraint firstItem="P15-on-i8y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="1My-ck-ebz"/>
+                            <constraint firstItem="P15-on-i8y" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-20" id="3fZ-L5-ffa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bgO-7S-S16" secondAttribute="trailing" constant="23" id="By2-6h-st4"/>
+                            <constraint firstItem="1Iq-RJ-C4M" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="FFQ-te-KXQ"/>
+                            <constraint firstItem="nxu-2a-vnL" firstAttribute="leading" secondItem="8hi-Sy-TaZ" secondAttribute="trailing" constant="7.5" id="MV6-dW-jK6"/>
+                            <constraint firstItem="kcD-W4-gmn" firstAttribute="top" secondItem="P15-on-i8y" secondAttribute="bottom" constant="13" id="Qp7-62-Hs7"/>
+                            <constraint firstItem="nxu-2a-vnL" firstAttribute="centerY" secondItem="8hi-Sy-TaZ" secondAttribute="centerY" id="UPu-qh-YQn"/>
+                            <constraint firstItem="bgO-7S-S16" firstAttribute="top" secondItem="8hi-Sy-TaZ" secondAttribute="bottom" constant="36" id="UZd-P6-pqE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1Iq-RJ-C4M" secondAttribute="trailing" id="e9h-IX-f86"/>
+                            <constraint firstItem="8hi-Sy-TaZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="lmR-YA-2Md"/>
+                            <constraint firstItem="1Iq-RJ-C4M" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tWG-iZ-IMs"/>
+                            <constraint firstItem="P15-on-i8y" firstAttribute="top" secondItem="1Iq-RJ-C4M" secondAttribute="bottom" constant="15" id="tns-dY-5If"/>
+                            <constraint firstItem="bgO-7S-S16" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="xFW-VG-hJN"/>
+                            <constraint firstItem="8hi-Sy-TaZ" firstAttribute="top" secondItem="P15-on-i8y" secondAttribute="bottom" constant="16" id="zK3-J6-SXX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBookMark" destination="kcD-W4-gmn" id="ais-gx-sHM"/>
+                        <outlet property="imgOfNews" destination="1Iq-RJ-C4M" id="29b-CX-SDl"/>
+                        <outlet property="lblAuthor" destination="8hi-Sy-TaZ" id="uwk-lJ-C7a"/>
+                        <outlet property="lblDate" destination="nxu-2a-vnL" id="TtR-wz-Jes"/>
+                        <outlet property="lblDesc" destination="bgO-7S-S16" id="c8D-4D-s3x"/>
+                        <outlet property="lblTitle" destination="P15-on-i8y" id="5lU-C0-O52"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

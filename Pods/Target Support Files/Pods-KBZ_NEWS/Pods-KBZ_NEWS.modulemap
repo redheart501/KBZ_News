@@ -1,0 +1,6 @@
+framework module Pods_KBZ_NEWS {
+  umbrella header "Pods-KBZ_NEWS-umbrella.h"
+
+  export *
+  module * { export * }
+}

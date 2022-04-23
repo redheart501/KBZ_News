@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsTableCell" rowHeight="176" id="VIm-Ee-io5" customClass="newsTableCell" customModule="KBZ_NEWS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VIm-Ee-io5" id="MCD-HB-XxX">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atD-zb-7Hv">
+                        <rect key="frame" x="142" y="31" width="39.5" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="FLg-cX-kSd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" This is the end This is the end This is the end This is the end This is the end This is the end " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35K-2e-Qfc">
+                        <rect key="frame" x="142" y="61.5" width="250" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53" id="KsV-5F-d06"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wBq-Hl-nQl">
+                        <rect key="frame" x="9" y="31" width="116" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="116" id="Oth-WG-clu"/>
+                            <constraint firstAttribute="height" constant="94" id="aFv-2Y-UvZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUh-qM-quL">
+                        <rect key="frame" x="142" y="122.5" width="25" height="33.5"/>
+                        <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="35K-2e-Qfc" firstAttribute="leading" secondItem="wBq-Hl-nQl" secondAttribute="trailing" constant="17" id="2lX-Pk-ucs"/>
+                    <constraint firstItem="wBq-Hl-nQl" firstAttribute="top" secondItem="MCD-HB-XxX" secondAttribute="top" constant="31" id="3tr-EF-vpM"/>
+                    <constraint firstAttribute="bottom" secondItem="jUh-qM-quL" secondAttribute="bottom" constant="20" symbolic="YES" id="L3w-aF-EyL"/>
+                    <constraint firstItem="wBq-Hl-nQl" firstAttribute="leading" secondItem="MCD-HB-XxX" secondAttribute="leading" constant="9" id="M8W-Kw-XBt"/>
+                    <constraint firstItem="jUh-qM-quL" firstAttribute="top" secondItem="35K-2e-Qfc" secondAttribute="bottom" constant="8" id="Qj0-uc-aX3"/>
+                    <constraint firstItem="atD-zb-7Hv" firstAttribute="top" secondItem="MCD-HB-XxX" secondAttribute="top" constant="31" id="XE1-Gb-bvR"/>
+                    <constraint firstItem="35K-2e-Qfc" firstAttribute="leading" secondItem="jUh-qM-quL" secondAttribute="leading" id="cIM-J2-b3S"/>
+                    <constraint firstAttribute="bottom" secondItem="wBq-Hl-nQl" secondAttribute="bottom" constant="51" id="eb4-VP-0X7"/>
+                    <constraint firstAttribute="trailing" secondItem="35K-2e-Qfc" secondAttribute="trailing" constant="31" id="kQ9-Wd-xZ3"/>
+                    <constraint firstItem="atD-zb-7Hv" firstAttribute="leading" secondItem="wBq-Hl-nQl" secondAttribute="trailing" constant="17" id="lFf-ET-6SC"/>
+                    <constraint firstItem="35K-2e-Qfc" firstAttribute="centerY" secondItem="MCD-HB-XxX" secondAttribute="centerY" id="saE-yf-ttZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgOfNews" destination="wBq-Hl-nQl" id="vQZ-zX-ahs"/>
+                <outlet property="lblAuthor" destination="atD-zb-7Hv" id="8lZ-z4-jjv"/>
+                <outlet property="lblDate" destination="jUh-qM-quL" id="Poi-lS-BsL"/>
+                <outlet property="lblTitle" destination="35K-2e-Qfc" id="WpE-vb-Xu3"/>
+            </connections>
+            <point key="canvasLocation" x="-77.536231884057983" y="74.330357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
